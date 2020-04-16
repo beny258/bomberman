@@ -42,7 +42,7 @@ public class GraphicWidget extends JComponent {
     public GraphicWidget() {
         end = false;
         map = new HashMap<>();
-        NO_OBJECT_IMAGE_NAME = "grass.png";
+        NO_OBJECT_IMAGE_NAME = "images/grass.png";
         POINT_SIDE = 32;
         IMAGES = new HashMap<>();
     }
@@ -50,7 +50,7 @@ public class GraphicWidget extends JComponent {
     private void loadFiles() throws IOException {
         IMG_NONE = ImageIO.read(new File(NO_OBJECT_IMAGE_NAME));
         for (MapObjectType mot:MapObjectType.values()) {
-            IMAGES.put(mot.toString(), ImageIO.read(new File(mot.toString()+".png")));
+            IMAGES.put(mot.toString(), ImageIO.read(new File("images/"+mot.toString()+".png")));
         }
     }
     

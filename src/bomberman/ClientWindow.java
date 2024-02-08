@@ -1,8 +1,8 @@
 
 package bomberman;
 
-import com.sun.glass.events.KeyEvent;
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
